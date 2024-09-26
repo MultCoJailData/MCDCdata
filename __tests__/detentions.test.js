@@ -52,8 +52,8 @@ describe('app routes', () => {
 
     detention = await Detention.create({
       bookingNumber: '12345678',
-      bookingDate: '2019-11-17T10:12:00.000+00:00',
-      releaseDate:'2019-11-19T10:12:00.000+00:00',
+      bookingDate: '2020-11-17T10:12:00.000+00:00',
+      releaseDate:'2020-11-19T10:12:00.000+00:00',
       person: person._id,
       arrestingAgency: 'Portland Police',
       bookingStates: bookingState._id,
@@ -111,8 +111,8 @@ describe('app routes', () => {
         expect(res.body).toEqual({
           _id: detention.id,
           bookingNumber: '12345678',
-          bookingDate: '2019-11-17T10:12:00.000Z',
-          releaseDate:'2019-11-19T10:12:00.000Z',
+          bookingDate: '2020-11-17T10:12:00.000Z',
+          releaseDate:'2020-11-19T10:12:00.000Z',
           person: {
             __v: 0,
             _id: person.id,
